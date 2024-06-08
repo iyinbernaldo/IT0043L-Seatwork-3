@@ -1,0 +1,17 @@
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+#hero .col {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    }
+#hero .img-col {
+    justify-content: flex-end;
+    margin-top: 100px;
+    }
+#hero img {
+    max-width: 130% !important;
+    width: 130%;
+    }

@@ -1,17 +1,5 @@
-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    }
-#hero .col {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    }
-#hero .img-col {
-    justify-content: flex-end;
-    margin-top: 100px;
-    }
-#hero img {
-    max-width: 130% !important;
-    width: 130%;
-    }
+body {
+    background: linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
+    background: -moz-linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
+    background: -webkit-linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
+  }

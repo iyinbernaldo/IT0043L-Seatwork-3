@@ -1,5 +1,30 @@
-body {
-    background: linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
-    background: -moz-linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
-    background: -webkit-linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
-  }
+/* style.css (Landing Page) */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background: url('../img/background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#landing .content-box {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Apply blur to the background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.img-col img {
+  border-radius: 15px; /* Adjust the value to get the desired roundness */
+}

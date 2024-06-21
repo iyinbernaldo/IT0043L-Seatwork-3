@@ -1,8 +1,7 @@
-/* Global styles if needed */
 body {
     font-family: Arial, sans-serif;
-    padding-top: 120px; /* Offset to account for the fixed header */
-    background-image: url('path/to/your/background-image.jpg'); /* Replace with your blurred background image */
+    padding-top: 120px; 
+    background-image: url('path/to/your/background-image.jpg'); 
     background-size: cover;
     background-position: center;
     position: relative;
@@ -15,18 +14,18 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white overlay */
-    backdrop-filter: blur(10px); /* Apply blur to the overlay */
-    z-index: -1; /* Behind all other content */
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    z-index: -1; 
 }
 
 .fixed-top {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensure it stays on top of other content */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Apply blur to the fixed header */
+    z-index: 1000; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px); 
     }
     
 .header {
@@ -69,7 +68,7 @@ body::before {
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;
-    bottom: 120%; /* Position above the icon */
+    bottom: 120%; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -96,35 +95,35 @@ body::before {
 /* Example 6 styles */
 .example-6 .navbar {
     background-color: #6c757d;
-    position: relative; /* Needed for absolute positioning of .logo-text */
-    z-index: 1; /* Ensure the navbar has a higher z-index than other content */
+    position: relative; 
+    z-index: 1; 
 }
 
 .example-6 .navbar-brand {
     position: relative;
-    overflow: visible; /* Allow the logo to overflow, revealing the text */
+    overflow: visible; 
 }
 
 .example-6 .logo {
     position: relative;
-    width: 40px; /* Adjust width as per your logo size */
+    width: 40px; 
 }
 
 .example-6 .logo-text {
     position: absolute;
     top: 50%;
-    left: 100%; /* Initially positioned outside the parent */
+    left: 100%; 
     transform: translate(-100%, -50%);
     color: #000000;
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and transform */
-    z-index: 2; /* Ensure text appears above navbar */
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    z-index: 2; 
 }
 
 .example-6 .navbar-brand:hover .logo-text {
-    opacity: 1; /* Fades in the text */
-    left: 60px; /* Adjust positioning as per your design */
-    transform: translate(0, -50%); /* Slide in to the left of the logo when parent is hovered */
+    opacity: 1; 
+    left: 60px; 
+    transform: translate(0, -50%); 
 }
 
 /* Example 7 styles */
@@ -148,13 +147,13 @@ body::before {
 
 .example-7 .navbar-nav .nav-link img:hover {
     opacity: 0.7;
-    transform: scale(1.1); /* Scale up the SVG on hover */
+    transform: scale(1.1); /
 }
 
 /* Example 8 styles */
 .example-8 .header-example {
-    background-color: #ffffff; /* White background */
-    border-bottom: 1px solid #dee2e6; /* White bar */
+    background-color: #ffffff; 
+    border-bottom: 1px solid #dee2e6; 
     padding: 10px 0;
 }
 
@@ -162,11 +161,11 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px; /* Adjust padding as needed */
+    padding: 0 20px; 
 }
 
 .example-8 .navbar-brand {
-    margin-right: auto; /* Pushes the dropdown to the right */
+    margin-right: auto; 
 }
 
 .example-8 .dropdown {
@@ -220,44 +219,44 @@ body::before {
 }
 
 .example-9 .navbar {
-    background-color: #f8f9fa; /* Light background color */
-    border-bottom: 1px solid #ddd; /* Optional: Bottom border */
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .example-9 .navbar-nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Ensure flexbox layout */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    align-items: center; 
 }
 
 .example-9 .navbar-nav .nav-item {
-    margin-left: 10px; /* Adjust spacing between items */
+    margin-left: 10px; 
 }
 
 .example-9 .navbar-nav .nav-link {
     text-decoration: none;
-    color: transparent; /* Transparent text */
-    padding: 10px; /* Adjust padding as needed */
-    display: flex; /* Flex layout for aligning SVG */
-    justify-content: center; /* Center icons horizontally */
-    align-items: center; /* Center icons vertically */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for background and transform */
+    color: transparent; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .example-9 .navbar-nav .nav-link img {
-    display: block; /* Ensure SVG icons are displayed properly */
-    transition: transform 0.3s; /* Smooth transition for transform */
+    display: block; 
+    transition: transform 0.3s; 
 }
 
 .example-9 .navbar-nav .nav-link:hover {
-    background-color: #eee; /* Hover background color */
-    transform: rotateY(180deg); /* Flip horizontally on hover */
+    background-color: #eee; 
+    transform: rotateY(180deg); 
 }
 
 .example-9 .navbar-nav .nav-link:hover img {
-    transform: rotateY(-180deg); /* Reverse flip for the image */
+    transform: rotateY(-180deg); 
 }
 
 /* Example 10 styles */
@@ -267,42 +266,42 @@ body::before {
 }
 
 .example-10 .navbar {
-    background-color: #f8f9fa; /* Light background color */
-    border-bottom: 1px solid #ddd; /* Optional: Bottom border */
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .example-10 .navbar-nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Ensure flexbox layout */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center;
 }
 
 .example-10 .navbar-nav .nav-item {
-    margin-left: 10px; /* Adjust spacing between items */
+    margin-left: 10px; 
 }
 
 .example-10 .navbar-nav .nav-link {
     text-decoration: none;
-    color: transparent; /* Transparent text */
-    padding: 10px; /* Adjust padding as needed */
-    display: flex; /* Flex layout for aligning SVG */
-    justify-content: center; /* Center icons horizontally */
-    align-items: center; /* Center icons vertically */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for background and transform */
+    color: transparent; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .example-10 .navbar-nav .nav-link img {
-    display: block; /* Ensure SVG icons are displayed properly */
-    transition: transform 0.3s; /* Smooth transition for transform */
+    display: block; 
+    transition: transform 0.3s; 
 }
 
 .example-10 .navbar-nav .nav-link:hover {
-    background-color: #eee; /* Hover background color */
-    transform: rotate(360deg); /* Spin 360 degrees on hover */
+    background-color: #eee;
+    transform: rotate(360deg); 
 }
 
 .example-10 .navbar-nav .nav-link:hover img {
-    transform: rotate(-360deg); /* Reverse spin for the image */
+    transform: rotate(-360deg); 
 }
